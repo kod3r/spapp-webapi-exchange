@@ -31,7 +31,8 @@ namespace ExchangeDemoWeb
             string aadInstance = ConfigurationManager.AppSettings["ida:AADInstance"];
             string tenant = ConfigurationManager.AppSettings["ida:Tenant"];
             string clientSecret = ConfigurationManager.AppSettings["ida:AppKey"];
-            string graphResourceID = ConfigurationManager.AppSettings["ida:GraphResourceID"];
+
+            string webAPIResourceID = ConfigurationManager.AppSettings["webAPIResourceID"];
 
             string authority = string.Format(CultureInfo.InvariantCulture, aadInstance, tenant);
 
@@ -57,10 +58,10 @@ namespace ExchangeDemoWeb
                             //  save those in a persistent store...
                             AuthenticationContext authContext = new AuthenticationContext(authority, new ADALTokenCache(signInUserId));
 
-                            // obtain access token for the AzureAD graph
-                            Uri redirectUri = new Uri(HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Path));
-                            AuthenticationResult authResult = authContext.AcquireTokenByAuthorizationCode(code, redirectUri, creds, graphResourceID);
-
+                            // obtain access token for the Web API
+                            Uri redirectUri = new Uri(HttpContext.Current.Request.Url.GetLeftPart(UriPartial.Path));                            
+                            AuthenticationResult authResult = authContext.AcquireTokenByAuthorizationCode(code, redirectUri, creds, webAPIResourceID);
+                        
                             // successful auth                            
                             return Task.FromResult(0);
                         },

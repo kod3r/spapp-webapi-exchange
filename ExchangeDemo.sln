@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeDemo", "ExchangeDem
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeDemoWeb", "ExchangeDemoWeb\ExchangeDemoWeb.csproj", "{45A05572-02EB-4AE9-A32C-B81531819265}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeDemoAPI", "ExchangeDemoAPI\ExchangeDemoAPI.csproj", "{5DCF241E-BB32-4A6D-8CF9-3AB02150064E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{45A05572-02EB-4AE9-A32C-B81531819265}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45A05572-02EB-4AE9-A32C-B81531819265}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45A05572-02EB-4AE9-A32C-B81531819265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DCF241E-BB32-4A6D-8CF9-3AB02150064E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DCF241E-BB32-4A6D-8CF9-3AB02150064E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DCF241E-BB32-4A6D-8CF9-3AB02150064E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DCF241E-BB32-4A6D-8CF9-3AB02150064E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
