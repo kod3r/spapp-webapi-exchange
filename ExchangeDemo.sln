@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeDemoWeb", "Exchange
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeDemoAPI", "ExchangeDemoAPI\ExchangeDemoAPI.csproj", "{5DCF241E-BB32-4A6D-8CF9-3AB02150064E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExchangeDemoSPA", "ExchangeDemoSPA\ExchangeDemoSPA.csproj", "{38ABEC2A-1A87-4D3A-A5A3-CFA5C01BA818}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,10 @@ Global
 		{5DCF241E-BB32-4A6D-8CF9-3AB02150064E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DCF241E-BB32-4A6D-8CF9-3AB02150064E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DCF241E-BB32-4A6D-8CF9-3AB02150064E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38ABEC2A-1A87-4D3A-A5A3-CFA5C01BA818}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38ABEC2A-1A87-4D3A-A5A3-CFA5C01BA818}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38ABEC2A-1A87-4D3A-A5A3-CFA5C01BA818}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38ABEC2A-1A87-4D3A-A5A3-CFA5C01BA818}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,18 @@
+﻿<div ng-init="populate()">
+    <p class="error">{{error}}</p>
+    <p>{{loadingMessage}}</p>
+    <div class="panel">        
+        <table class="table table-striped">
+            <tbody>
+                <tr data-ng-repeat="item in mailList">
+                    <td>
+                        <p>{{item.From}}</p>                                                
+                    </td>
+                    <td>
+                        <p>{{item.Subject}}</p>                                                
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
